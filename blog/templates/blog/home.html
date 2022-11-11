@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <title>carsguru</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#eef5ff,#f8f9fb);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+.topnav a {
+  float: left;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:black;
+}
+
+.topnav a.active {
+  background-color: #F4B41F;
+  color: white;
+}
+.multicolor-text {
+            text-align:center;
+            font-style:italic;
+            font-size: 25px;
+            -webkit-background-clip: text;
+            color: rgb(181, 168, 168);
+}
+.topnav .login-container {
+  float: right;
+}
+.topnav .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 5px;
+  margin-right: 15px;
+  background:rgb(100, 100, 231);
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 500px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  
+}
+
+img {
+  max-width: 100%
+}
+
+.image {
+  flex-basis: 40%
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.button{
+  margin-right: 15px;
+  background:orange;
+
+}
+  
+</style>
+<body>
+    <div class="topnav">
+            <a><img src="../../static/blog/showroom.jpg" style="float: right;" width="250" height="250" class="d-inline-block align-top"></a>
+            <a><h3 class="multicolor-text">Car showroom</h3></a>
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Contact us">Contact us</a>
+            <a href="#review">review</a>
+            <div class="login-container">
+            <a href="index.html"><button type="submit">Add to Cart <i class="login-container"></i></button></a> 
+            </div>
+    </div>
+    
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/ferrari.jpeg" class="card-img-top" alt="...">
+          <h3>Ferrari</h3>
+          <h4>1,8000,00</h4>
+          <button type="submit">Buy Now<i class="button"></i></i></button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/benz.jpeg" class="card-img-top" alt="...">
+          <h3>Benz </h3>
+          <h4>70,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/swift.jpeg" class="card-img-top" alt="...">
+          <h3>Swift Dzire</h3>
+          <h4>8,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/kia.jpeg" class="card-img-top" alt="...">
+          <h3>Kia</h3>
+          <h4>15,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+          
+        </div>
+      </div>
+      <div>
+        <br>
+        <br>
+        
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/baleno.jpeg" class="card-img-top" alt="...">
+          <h3>Baleno</h3>
+          <h4>17,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/bently.jpg" class="card-img-top" alt="...">
+          <h3>bently</h3>
+          <h4>2,450,00,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/lambo.png" class="card-img-top" alt="...">
+          <h3>Lamborigini</h3>
+          <h4>1,50,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5><i class="fa fa-heart" style="font-size:20px;color:red"></i></h5>
+          <img src="../../static/blog/audi.jpg" class="card-img-top" alt="...">
+          <h3>Audi</h3>
+          <h4>46,000,00</h4>
+          <button type="submit">Buy Now </button>
+          <br>
+          <button type="submit">Add to Cart<i class= "button"</i></button>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html

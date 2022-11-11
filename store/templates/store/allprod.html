@@ -1,0 +1,9 @@
+{% if allproducts %}
+            <ol>
+                {% for product in allproducts %}
+                    <li>{{product}}</li>
+                {% endfor %}
+            </ol>
+        {% else %}
+            <p>No products</p>
+        {% endif %}
