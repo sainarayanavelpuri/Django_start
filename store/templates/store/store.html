@@ -8,9 +8,16 @@
             <div class="box-element product">
                 <h6><strong>{{product.name}}</strong></h6>
                 <hr>
-                <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart" >Add to cart</button>
+                {% if product.stock > 0 %}
+                    <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart" >Add to cart</button>
+                {% endif %}
                 <a class="btn btn-outline-success" href="">View</a>
                 <h4 style="display: inline-block; float: right;">{{product.price|floatformat:2}}Rs.</h4>
+                <h4 style="display: inline-block;">
+                {% if product.stock == 0 %}
+                    Out of stock!
+                {% endif %}
+                </h4>
             </div>
         </div>
         <!--<div class="col-lg-4">

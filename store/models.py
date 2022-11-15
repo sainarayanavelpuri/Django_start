@@ -13,7 +13,8 @@ class Products(models.Model):
     name = models.CharField(max_length=256)
     price = models.FloatField()
     digital = models.BooleanField(default=False,null=True,blank=True)
-    image = models.URLField(null=True,blank=True)
+    image = models.ImageField(null=True,blank=True)
+    stock = models.IntegerField(default=0,null=False)
 
     def __str__(self):
         return self.name
@@ -35,6 +36,15 @@ class Order(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+    @property
+    def shipping(self):
+        shipping = False
+        orderitems = self.orderitem_set.all()
+        for i in orderitems:
+            if i.product.digital == False:
+                shipping = True
+        return shipping
 
     @property
     def get_cart_total(self):
@@ -70,6 +80,5 @@ class ShippingAddress(models.Model):
     
     def __str__(self):
         return self.address
-
 
 # Create your models here.
